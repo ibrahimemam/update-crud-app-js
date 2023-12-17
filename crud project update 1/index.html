@@ -1,0 +1,45 @@
+
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Product CRUD</title>
+    </head>
+    <body>
+    
+        <div class="container mt-5">
+            <h1 class="mb-4">Product CRUD</h1>
+            <form id="crud-form" class="mb-4">
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Product Name" id="productName" required>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Product Description" id="productDescription" required>
+                </div>
+              </div>
+              <div class="form-row mt-2">
+                <div class="col">
+                  <input type="number" class="form-control" placeholder="Product Price" id="productPrice" required>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Product Category" id="productCategory" required>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary mt-2" onclick="addProduct()">Add Product</button>
+            </form>
+        
+            <ul id="product-list" class="list-group"></ul>
+          </div>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+    </body>
+    </html>
